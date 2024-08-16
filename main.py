@@ -6,7 +6,7 @@ from PyQt5.QtWidgets import QMenuBar, QStatusBar
 from src.windows.main_window import CentralWidget
 
 
-class Window(QMainWindow):
+class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         centralwidget = CentralWidget()
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     import sys
     app = QApplication(sys.argv)
 
-    window = Window()
+    window = MainWindow()
     window.show()
     sys.exit(app.exec_())
 
